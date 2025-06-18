@@ -1,0 +1,16 @@
+{
+  "package_name": "slam_toolbox",
+  "non_idl_tuples": [
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/Pause.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/Reset.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/ClearQueue.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/ToggleInteractive.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/Clear.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/SaveMap.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/LoopClosure.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/MergeMaps.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/AddSubmap.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/DeserializePoseGraph.srv",
+    "/home/khemin/ros2_ws/src/slam_toolbox:srv/SerializePoseGraph.srv"
+  ]
+}
