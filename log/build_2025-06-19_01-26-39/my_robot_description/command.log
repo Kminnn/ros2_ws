@@ -1,0 +1,2 @@
+Invoking command in '/home/khemin/ros2_ws/build/my_robot_description': /usr/bin/cmake --build /home/khemin/ros2_ws/build/my_robot_description -- -j16 -l16
+Invoked command in '/home/khemin/ros2_ws/build/my_robot_description' returned '2': /usr/bin/cmake --build /home/khemin/ros2_ws/build/my_robot_description -- -j16 -l16

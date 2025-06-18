@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "urdf" "launch" "DESTINATION" "share/my_robot_description")
 ament_cmake_symlink_install_directory("/home/khemin/ros2_ws/src/my_robot_description" DIRECTORY "urdf" "launch" "DESTINATION" "share/my_robot_description")
 
+# install(DIRECTORY "config/" "DESTINATION" "share/my_robot_description/config")
+ament_cmake_symlink_install_directory("/home/khemin/ros2_ws/src/my_robot_description" DIRECTORY "config/" "DESTINATION" "share/my_robot_description/config")
+
 # install(FILES "/home/khemin/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/khemin/ros2_ws/src/my_robot_description" FILES "/home/khemin/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

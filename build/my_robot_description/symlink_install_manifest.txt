@@ -1,5 +1,7 @@
 /home/khemin/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf.xacro
 /home/khemin/ros2_ws/install/my_robot_description/share/my_robot_description/launch/display.launch.py
+/home/khemin/ros2_ws/install/my_robot_description/share/my_robot_description/launch/slam_toolbox_launch.py
+/home/khemin/ros2_ws/install/my_robot_description/share/my_robot_description/config/slam_toolbox_params.yaml
 /home/khemin/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
 /home/khemin/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
 /home/khemin/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
