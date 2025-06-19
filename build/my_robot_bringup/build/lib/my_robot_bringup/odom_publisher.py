@@ -26,8 +26,8 @@ class OdomPublisher(Node):
         self.y = 0.0
         self.th = 0.0
 
-        self.vx = 0.05   # m/s
-        self.vth = 0.2   # rad/s
+        self.vx = 0.0   # m/s
+        self.vth = 0.0   # rad/s
 
         self.last_time = self.get_clock().now()
 
@@ -36,20 +36,20 @@ class OdomPublisher(Node):
         dt = (current_time - self.last_time).nanoseconds / 1e9
         self.last_time = current_time
 
-        # Simple kinematic update
-        delta_x = self.vx * math.cos(self.th) * dt
-        delta_y = self.vx * math.sin(self.th) * dt
-        delta_th = self.vth * dt
+        # Only update position if velocity is non-zero
+        if abs(self.vx) > 0.001 or abs(self.vth) > 0.001:
+            delta_x = self.vx * math.cos(self.th) * dt
+            delta_y = self.vx * math.sin(self.th) * dt
+            delta_th = self.vth * dt
 
-        self.x += delta_x
-        self.y += delta_y
-        self.th += delta_th
+            self.x += delta_x
+            self.y += delta_y
+            self.th += delta_th
 
-        # Quaternion
         from tf_transformations import quaternion_from_euler
         q = quaternion_from_euler(0, 0, self.th)
 
-        # Publish odom -> base_link TF
+        # Publish odom -> base_link transform
         t = TransformStamped()
         t.header.stamp = current_time.to_msg()
         t.header.frame_id = 'odom'
@@ -75,9 +75,13 @@ class OdomPublisher(Node):
         odom.pose.pose.orientation.y = q[1]
         odom.pose.pose.orientation.z = q[2]
         odom.pose.pose.orientation.w = q[3]
+
+        # Set velocity (simulate stationary)
         odom.twist.twist.linear.x = self.vx
         odom.twist.twist.angular.z = self.vth
+
         self.odom_pub.publish(odom)
+
 
 def main(args=None):
     rclpy.init(args=args)

@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/my_robot_bringup/my_robot_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_robot_bringup/my_robot_bringup.egg-info/dependency_links.txt
+writing entry points to ../../build/my_robot_bringup/my_robot_bringup.egg-info/entry_points.txt
+writing requirements to ../../build/my_robot_bringup/my_robot_bringup.egg-info/requires.txt
+writing top-level names to ../../build/my_robot_bringup/my_robot_bringup.egg-info/top_level.txt
+reading manifest file '../../build/my_robot_bringup/my_robot_bringup.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_robot_bringup/my_robot_bringup.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_robot_bringup/odom_publisher.py -> /home/khemin/ros2_ws/build/my_robot_bringup/build/lib/my_robot_bringup
+running install
+running install_lib
+copying /home/khemin/ros2_ws/build/my_robot_bringup/build/lib/my_robot_bringup/odom_publisher.py -> /home/khemin/ros2_ws/install/my_robot_bringup/lib/python3.10/site-packages/my_robot_bringup
+byte-compiling /home/khemin/ros2_ws/install/my_robot_bringup/lib/python3.10/site-packages/my_robot_bringup/odom_publisher.py to odom_publisher.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/my_robot_bringup/my_robot_bringup.egg-info to /home/khemin/ros2_ws/install/my_robot_bringup/lib/python3.10/site-packages/my_robot_bringup-0.1.0-py3.10.egg-info
+running install_scripts
+Installing odom_publisher script to /home/khemin/ros2_ws/install/my_robot_bringup/lib/my_robot_bringup
+writing list of installed files to '/home/khemin/ros2_ws/build/my_robot_bringup/install.log'
