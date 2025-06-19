@@ -52,3 +52,15 @@ issue i found -> package is being recognized as a catkin (ROS 1) package, not a 
 khemin@khemin:~/ros2_ws$ colcon list
 my_robot_description	src/my_robot_description	(ros.catkin)
 )
+
+
+
+numpy downgrade:
+
+sudo apt update
+sudo apt install build-essential python3-dev python3-pip python3-setuptools python3-wheel
+sudo apt install libatlas-base-dev gfortran
+
+python3 -m pip install --upgrade pip setuptools wheel
+
+pip3 install numpy==1.19.5 --user
