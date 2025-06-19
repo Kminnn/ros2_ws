@@ -78,3 +78,14 @@ pip3 install numpy==1.21.6 --prefer-binary --user
 
 pip setuptools downgrade:
 pip install setuptools==68.2.2
+
+
+
+
+git command:
+
+git pull origin master
+
+git pull --rebase origin master
+
+git push origin master
