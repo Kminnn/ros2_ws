@@ -4,6 +4,8 @@ ros2 launch sllidar_ros2 view_sllidar_a1_launch.py
 
 ros2 run my_robot_bringup cmd_vel_listener
 
+ros2 run my_robot_bringup odom_publisher
+
 ros2 launch my_robot_description slam_toolbox_launch.py
 
 ros2 topic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.1}, angular: {z: 0.1}}'
