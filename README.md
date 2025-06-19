@@ -75,3 +75,6 @@ sudo pip3 uninstall numpy -y
 
 pip3 install numpy==1.21.6 --prefer-binary --user
 
+
+pip setuptools downgrade:
+pip install setuptools==68.2.2
