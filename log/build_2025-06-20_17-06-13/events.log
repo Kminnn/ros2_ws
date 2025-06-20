@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000244] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.000436] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.000472] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.000495] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.000515] (-) EventReactorShutdown: {}
