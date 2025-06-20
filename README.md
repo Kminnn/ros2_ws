@@ -138,6 +138,7 @@ from launch_ros.actions import Node, SetParameter, SetRemap
 # PushROSNamespace(namespace),
 
 khemin@khemin:~/rosbot_ws/src/rosbot_ros/rosbot_controller/config/rosbot_xl$ gedit mecanum_drive_controller.yaml 
+gedit ~/rosbot_ws/src/rosbot_ros/rosbot_controller/config/rosbot_xl/mecanum_drive_controller.yaml
 
 front_left_wheel_command_joint_name: fl_wheel_joint
 front_right_wheel_command_joint_name: fr_wheel_joint
