@@ -10,9 +10,7 @@ ros2 launch my_robot_description slam_toolbox_launch.py
 
 ros2 topic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.1}, angular: {z: 0.1}}'
 
-
-
-
+ros2 run lidar_odometry lidar_odometry_node
 
 setup command:
 
