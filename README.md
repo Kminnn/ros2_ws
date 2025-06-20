@@ -12,6 +12,8 @@ ros2 topic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.1}, angular: {z: 0.1
 
 ros2 run lidar_odometry lidar_odometry_node
 
+ros2 run my_robot_bringup scan_odom_republisher
+
 setup command:
 
 sudo apt update
