@@ -1,3 +1,12 @@
+main command:
+
+ros2 launch my_robot_bringup my_robot_launch.py
+
+ros2 launch sllidar_ros2 view_sllidar_a1_launch.py
+
+ros2 run lidar_odometry lidar_odometry_node --ros-args --params-file ~/ros2_ws/src/simple_2d_lidar_odometry/config/lidar_odometry_params.yaml
+
+
 command list:
 
 ros2 launch sllidar_ros2 view_sllidar_a1_launch.py
