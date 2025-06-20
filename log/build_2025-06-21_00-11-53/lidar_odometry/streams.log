@@ -1,0 +1,14 @@
+[0.011s] Invoking command in '/home/khemin/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --build /home/khemin/ros2_ws/build/lidar_odometry -- -j16 -l16
+[0.081s] [ 33%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o[0m
+[4.197s] [01m[K/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry.cpp:5:17:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KEigen::Matrix4d inverseSE3(const Matrix4d&)[m[K’
+[4.197s]     5 | Eigen::Matrix4d [01;31m[KinverseSE3[m[K(const Eigen::Matrix4d& T)
+[4.197s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[4.197s] In file included from [01m[K/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/lidar_odometry.hpp:7[m[K,
+[4.197s]                  from [01m[K/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry.cpp:1[m[K:
+[4.198s] [01m[K/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/utils.hpp:51:24:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d inverseSE3(const Matrix4d&)[m[K’ previously defined here
+[4.198s]    51 | inline Eigen::Matrix4d [01;36m[KinverseSE3[m[K(const Eigen::Matrix4d& T) {
+[4.198s]       |                        [01;36m[K^~~~~~~~~~[m[K
+[8.979s] gmake[2]: *** [CMakeFiles/lidar_odometry_node.dir/build.make:90: CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o] Error 1
+[8.979s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lidar_odometry_node.dir/all] Error 2
+[8.980s] gmake: *** [Makefile:146: all] Error 2
+[8.983s] Invoked command in '/home/khemin/ros2_ws/build/lidar_odometry' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --build /home/khemin/ros2_ws/build/lidar_odometry -- -j16 -l16

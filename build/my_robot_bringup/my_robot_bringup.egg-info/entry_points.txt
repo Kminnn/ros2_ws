@@ -1,2 +1,3 @@
 [console_scripts]
 odom_publisher = my_robot_bringup.odom_publisher:main
+scan_odom_republisher = my_robot_bringup.scan_odom_to_odom:main

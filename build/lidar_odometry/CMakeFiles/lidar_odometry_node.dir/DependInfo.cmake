@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o" "gcc" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o.d"
-  "/home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry_node.cpp" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o" "gcc" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o.d"
+  "/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry.cpp" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o" "gcc" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o.d"
+  "/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry_node.cpp" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o" "gcc" "CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o.d"
   )
 
 # Targets to which this target links.

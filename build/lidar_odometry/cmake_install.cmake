@@ -1,4 +1,4 @@
-# Install script for directory: /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry
+# Install script for directory: /home/khemin/ros2_ws/src/simple_2d_lidar_odometry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lidar_odometry" TYPE FILE FILES "/home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lidar_odometry" TYPE FILE FILES "/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

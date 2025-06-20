@@ -1,0 +1,176 @@
+[0.024s] Invoking command in '/home/khemin/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake /home/khemin/ros2_ws/src/simple_2d_lidar_odometry -DCMAKE_INSTALL_PREFIX=/home/khemin/ros2_ws/install/lidar_odometry
+[0.189s] -- The C compiler identification is GNU 11.4.0
+[0.189s] -- The CXX compiler identification is GNU 11.4.0
+[0.189s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.201s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.201s] -- Detecting C compile features
+[0.202s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.579s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.687s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.744s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.752s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.763s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.776s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.795s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.851s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.855s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.951s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.979s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.024s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.037s] -- Looking for pthread.h
+[1.104s] -- Looking for pthread.h - found
+[1.104s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.172s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.173s] -- Found Threads: TRUE  
+[1.223s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.252s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.278s] -- Checking for module 'eigen3'
+[1.292s] --   Found eigen3, version 3.4.0
+[1.327s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.327s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.356s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.374s] -- Checking for module 'flann'
+[1.391s] --   Found flann, version 1.9.1
+[1.433s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.433s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.461s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.467s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.628s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.630s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.636s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.667s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.718s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.741s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.972s] -- Found X11: /usr/include   
+[1.973s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.093s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.093s] -- Looking for gethostbyname
+[2.206s] -- Looking for gethostbyname - found
+[2.206s] -- Looking for connect
+[2.304s] -- Looking for connect - found
+[2.305s] -- Looking for remove
+[2.377s] -- Looking for remove - found
+[2.377s] -- Looking for shmat
+[2.447s] -- Looking for shmat - found
+[2.447s] -- Looking for IceConnectionNumber in ICE
+[2.519s] -- Looking for IceConnectionNumber in ICE - found
+[2.619s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.620s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.622s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.624s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.636s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[2.644s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.647s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.652s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.742s] -- Checking for module 'libusb-1.0'
+[2.762s] --   Found libusb-1.0, version 1.0.25
+[2.806s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.807s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.807s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.875s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.876s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.876s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[3.016s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.023s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.030s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.159s] -- Found Qhull version 8.0.2
+[3.290s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.412s] -- looking for PCL_COMMON
+[3.413s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.413s] -- looking for PCL_KDTREE
+[3.414s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.414s] -- looking for PCL_OCTREE
+[3.415s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.415s] -- looking for PCL_SEARCH
+[3.415s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.415s] -- looking for PCL_SAMPLE_CONSENSUS
+[3.416s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.416s] -- looking for PCL_FILTERS
+[3.417s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.417s] -- looking for PCL_2D
+[3.417s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.417s] -- looking for PCL_GEOMETRY
+[3.417s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.417s] -- looking for PCL_IO
+[3.418s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.418s] -- looking for PCL_FEATURES
+[3.418s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.418s] -- looking for PCL_ML
+[3.419s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.419s] -- looking for PCL_SEGMENTATION
+[3.420s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.420s] -- looking for PCL_VISUALIZATION
+[3.420s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.421s] -- looking for PCL_SURFACE
+[3.421s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.421s] -- looking for PCL_REGISTRATION
+[3.422s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.422s] -- looking for PCL_KEYPOINTS
+[3.423s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.423s] -- looking for PCL_TRACKING
+[3.423s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.424s] -- looking for PCL_RECOGNITION
+[3.424s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.424s] -- looking for PCL_STEREO
+[3.425s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.425s] -- looking for PCL_APPS
+[3.426s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.426s] -- looking for PCL_IN_HAND_SCANNER
+[3.426s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.426s] -- looking for PCL_MODELER
+[3.426s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.426s] -- looking for PCL_POINT_CLOUD_EDITOR
+[3.426s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.427s] -- looking for PCL_OUTOFCORE
+[3.427s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.427s] -- looking for PCL_PEOPLE
+[3.428s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.428s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[3.440s] -- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)
+[3.463s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.489s] -- Found tf2_eigen: 0.25.13 (/opt/ros/humble/share/tf2_eigen/cmake)
+[3.587s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.669s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.669s] -- Configured cppcheck include dirs: /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include;$<BUILD_INTERFACE:/home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include>
+[3.669s] -- Configured cppcheck exclude dirs and/or files: 
+[3.671s] -- Added test 'lint_cmake' to check CMake code style
+[3.674s] -- Added test 'uncrustify' to check C / C++ code style
+[3.674s] -- Configured uncrustify additional arguments: 
+[3.675s] -- Added test 'xmllint' to check XML markup files
+[3.676s] -- Configuring done
+[3.706s] -- Generating done
+[3.715s] -- Build files have been written to: /home/khemin/ros2_ws/build/lidar_odometry
+[3.733s] Invoked command in '/home/khemin/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake /home/khemin/ros2_ws/src/simple_2d_lidar_odometry -DCMAKE_INSTALL_PREFIX=/home/khemin/ros2_ws/install/lidar_odometry
+[3.735s] Invoking command in '/home/khemin/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --build /home/khemin/ros2_ws/build/lidar_odometry -- -j16 -l16
+[3.791s] [ 33%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o[0m
+[3.791s] [ 66%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o[0m
+[18.053s] [100%] [32m[1mLinking CXX executable lidar_odometry_node[0m
+[19.174s] [100%] Built target lidar_odometry_node
+[19.185s] Invoked command in '/home/khemin/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --build /home/khemin/ros2_ws/build/lidar_odometry -- -j16 -l16
+[19.187s] Invoking command in '/home/khemin/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --install /home/khemin/ros2_ws/build/lidar_odometry
+[19.194s] -- Install configuration: ""
+[19.194s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/lib/lidar_odometry/lidar_odometry_node
+[19.203s] -- Set runtime path of "/home/khemin/ros2_ws/install/lidar_odometry/lib/lidar_odometry/lidar_odometry_node" to ""
+[19.203s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry
+[19.203s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry
+[19.203s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh
+[19.203s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv
+[19.203s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/path.sh
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/path.dsv
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.bash
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.sh
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.zsh
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.dsv
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.dsv
+[19.204s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry
+[19.205s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake
+[19.205s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake
+[19.205s] -- Installing: /home/khemin/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.xml
+[19.207s] Invoked command in '/home/khemin/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/khemin/ros2_ws/install/my_robot_bringup:/home/khemin/rosbot_ws/install/rosbot_utils:/home/khemin/rosbot_ws/install/rosbot_bringup:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_gazebo:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_controller:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_utils:/home/khemin/rosbot_ws/src/rosbot_ros/install/rosbot_bringup:/home/khemin/ws_lidar/install/lidar_processing:/opt/ros/humble /usr/bin/cmake --install /home/khemin/ros2_ws/build/lidar_odometry

@@ -1,5 +1,5 @@
 CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o: \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry_node.cpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry_node.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1551,7 +1551,7 @@ CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/lidar_odometry.hpp \
  /usr/include/pcl-1.12/pcl/registration/gicp.h \
  /usr/include/pcl-1.12/pcl/registration/bfgs.h \
  /usr/include/eigen3/unsupported/Eigen/Polynomials \
@@ -1875,7 +1875,7 @@ CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o: \
  /usr/include/pcl-1.12/pcl/registration/impl/icp.hpp \
  /usr/include/pcl-1.12/pcl/registration/impl/gicp.hpp \
  /usr/include/pcl-1.12/pcl/registration/exceptions.h \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/utils.hpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/utils.hpp \
  /opt/ros/humble/include/laser_geometry/laser_geometry/laser_geometry.hpp \
  /opt/ros/humble/include/tf2/tf2/buffer_core.h \
  /opt/ros/humble/include/laser_geometry/laser_geometry/visibility_control.hpp

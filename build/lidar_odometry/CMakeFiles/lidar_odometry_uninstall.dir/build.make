@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry
+CMAKE_SOURCE_DIR = /home/khemin/ros2_ws/src/simple_2d_lidar_odometry
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/khemin/ros2_ws/build/lidar_odometry
@@ -82,6 +82,6 @@ CMakeFiles/lidar_odometry_uninstall.dir/clean:
 .PHONY : CMakeFiles/lidar_odometry_uninstall.dir/clean
 
 CMakeFiles/lidar_odometry_uninstall.dir/depend:
-	cd /home/khemin/ros2_ws/build/lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry /home/khemin/ros2_ws/build/lidar_odometry /home/khemin/ros2_ws/build/lidar_odometry /home/khemin/ros2_ws/build/lidar_odometry/CMakeFiles/lidar_odometry_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khemin/ros2_ws/build/lidar_odometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khemin/ros2_ws/src/simple_2d_lidar_odometry /home/khemin/ros2_ws/src/simple_2d_lidar_odometry /home/khemin/ros2_ws/build/lidar_odometry /home/khemin/ros2_ws/build/lidar_odometry /home/khemin/ros2_ws/build/lidar_odometry/CMakeFiles/lidar_odometry_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lidar_odometry_uninstall.dir/depend
 

@@ -1118,7 +1118,7 @@ lidar_odometry_BINARY_DIR:STATIC=/home/khemin/ros2_ws/build/lidar_odometry
 lidar_odometry_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-lidar_odometry_SOURCE_DIR:STATIC=/home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry
+lidar_odometry_SOURCE_DIR:STATIC=/home/khemin/ros2_ws/src/simple_2d_lidar_odometry
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
@@ -1405,7 +1405,7 @@ CMAKE_HAVE_REMOVE:INTERNAL=1
 CMAKE_HAVE_SHMAT:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/khemin/ros2_ws/src/simple_2d_lidar_odometry
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //Have library ICE

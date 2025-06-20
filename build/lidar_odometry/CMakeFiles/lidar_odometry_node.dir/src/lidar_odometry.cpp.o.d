@@ -1,7 +1,7 @@
 CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o: \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/src/lidar_odometry.cpp \
  /usr/include/stdc-predef.h \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/lidar_odometry.hpp \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -1120,7 +1120,7 @@ CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o: \
  /usr/include/pcl-1.12/pcl/registration/impl/icp.hpp \
  /usr/include/pcl-1.12/pcl/registration/impl/gicp.hpp \
  /usr/include/pcl-1.12/pcl/registration/exceptions.h \
- /home/khemin/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/utils.hpp \
+ /home/khemin/ros2_ws/src/simple_2d_lidar_odometry/include/lidar_odometry/utils.hpp \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h \

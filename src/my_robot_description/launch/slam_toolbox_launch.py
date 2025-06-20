@@ -19,13 +19,16 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        # Launch slam_toolbox node
+        # Launch slam_toolbox node (remap odom input)
         Node(
             package='slam_toolbox',
             executable='async_slam_toolbox_node',
             name='slam_toolbox',
             output='screen',
-            parameters=[slam_params]
+            parameters=[slam_params],
+            remappings=[
+                ('/odom', '/scan_odom')  # 👈 remap scan_odom to standard odom
+            ]
         ),
 
         # Launch RViz2
@@ -44,14 +47,6 @@ def generate_launch_description():
             name='static_transform_publisher_base_link_laser',
             arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'laser'],
             output='screen'
-        ),
-
-        # Optional: static transform publisher from odom to base_link if no odom available
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_transform_publisher_odom_base_link',
-            arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_link'],
-            output='screen'
-        ),
+        )
     ])
+
