@@ -102,10 +102,18 @@ sudo apt install ros-humble-moveit
 sudo apt install ros-humble-control-toolbox
 sudo apt install ros-humble-rcpputils ros-humble-realtime-tools
 sudo apt install ros-humble-rcpputils
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+
+sudo apt install --reinstall ros-humble-controller-manager ros-humble-gazebo-ros2-control
 
 mv ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy ~/rosbot_ws/src/_open_manipulator_x_joy_backup
 
 mv src/husarion_controllers/mecanum_drive_controller ~/mecanum_drive_controller_backup
+
+mv ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy.bak
+
+mv ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_moveit ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_moveit.bak
+
 
 colcon build --packages-select rosbot_bringup rosbot_joy rosbot_description husarion_components_description husarion_gz_worlds rosbot_utils rosbot_localization open_manipulator_x_description
 
@@ -117,3 +125,30 @@ nano ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy/include/open_mani
 
 #include <moveit/move_group_interface/move_group_interface.h>
 //#include <moveit_msgs/srv/servo_command_type.hpp>
+
+cd ~/rosbot_ws/src/rosbot_ros
+colcon build
+source ../install/setup.bash
+ros2 launch rosbot_gazebo simulation.launch.py robot_model:=rosbot_xl
+
+gedit ~/rosbot_ws/src/rosbot_ros/rosbot_gazebo/launch/spawn_robot.launch.py
+gedit ~/rosbot_ws/src/rosbot_ros/rosbot_bringup/launch/bringup.launch.py
+
+from launch_ros.actions import Node, SetParameter, SetRemap
+# PushROSNamespace(namespace),
+
+khemin@khemin:~/rosbot_ws/src/rosbot_ros/rosbot_controller/config/rosbot_xl$ gedit mecanum_drive_controller.yaml 
+
+front_left_wheel_command_joint_name: fl_wheel_joint
+front_right_wheel_command_joint_name: fr_wheel_joint
+rear_left_wheel_command_joint_name: rl_wheel_joint
+rear_right_wheel_command_joint_name: rr_wheel_joint
+
+wheels_radius: 0.047
+
+sudo apt update && sudo apt upgrade
+
+kinematics:
+      wheel_separation_x: 0.170
+      wheel_separation_y: 0.270
+      wheels_radius: 0.047   # <--- nested inside 'kinematics'
