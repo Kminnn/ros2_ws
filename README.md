@@ -89,3 +89,31 @@ git pull origin master
 git pull --rebase origin master
 
 git push origin master
+
+
+
+
+
+rosbot3:
+
+sudo apt update
+sudo apt install ros-humble-filters
+sudo apt install ros-humble-moveit
+sudo apt install ros-humble-control-toolbox
+sudo apt install ros-humble-rcpputils ros-humble-realtime-tools
+sudo apt install ros-humble-rcpputils
+
+mv ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy ~/rosbot_ws/src/_open_manipulator_x_joy_backup
+
+mv src/husarion_controllers/mecanum_drive_controller ~/mecanum_drive_controller_backup
+
+colcon build --packages-select rosbot_bringup rosbot_joy rosbot_description husarion_components_description husarion_gz_worlds rosbot_utils rosbot_localization open_manipulator_x_description
+
+colcon build --packages-select husarion_components_description husarion_gz_worlds open_manipulator_x_description open_manipulator_x_moveit rosbot rosbot_bringup rosbot_controller rosbot_description rosbot_gazebo rosbot_joy rosbot_localization rosbot_utils
+
+nano ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy/src/joy2servo.cpp
+
+nano ~/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy/include/open_manipulator_x_joy/joy2servo.hpp
+
+#include <moveit/move_group_interface/move_group_interface.h>
+//#include <moveit_msgs/srv/servo_command_type.hpp>
