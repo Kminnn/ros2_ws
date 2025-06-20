@@ -94,7 +94,7 @@ git push origin master
 
 
 
-rosbot3:
+## rosbot3:
 
 sudo apt update
 sudo apt install ros-humble-filters
@@ -135,7 +135,7 @@ gedit ~/rosbot_ws/src/rosbot_ros/rosbot_gazebo/launch/spawn_robot.launch.py
 gedit ~/rosbot_ws/src/rosbot_ros/rosbot_bringup/launch/bringup.launch.py
 
 from launch_ros.actions import Node, SetParameter, SetRemap
-# PushROSNamespace(namespace),
+comment this PushROSNamespace(namespace),
 
 khemin@khemin:~/rosbot_ws/src/rosbot_ros/rosbot_controller/config/rosbot_xl$ gedit mecanum_drive_controller.yaml 
 gedit ~/rosbot_ws/src/rosbot_ros/rosbot_controller/config/rosbot_xl/mecanum_drive_controller.yaml
